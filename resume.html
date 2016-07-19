@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mengyao's page</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Galada">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_dgLKFrh8RT6TrshVRTFRO");
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <a href="#" class="navbar-brand my_name">Mengyao Wang</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page_scroll" style="display: none"></li>
+                    <li class="page_scroll">
+                        <a href="#about">
+                            <span class="glyphicon glyphicon-user"></span>
+                            About
+                        </a>
+                    </li>
+                    <li class="page_scroll">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-picture"></span>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="page_scroll">
+                        <a href="#project">
+                            <span class="glyphicon glyphicon-folder-close"></span>
+                            Project
+                        </a>
+                    </li>
+                    <li class="page_scroll">
+                        <a href="#contact">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row col-xs-12 col-sm-12 col-lg-12">
+                <a href="#" id="mengyao">
+                    Mengyao
+
+                    <div class="tooltip">
+                        <div class="content">
+                            <p>梦遥       <span class="glyphicon glyphicon-bullhorn"></span> </p>
+                            <audio id="name_voice" src="audio/mengyao.mp3"></audio>
+                            <p>Mèng Yáo</p>
+                        </div>
+
+                    </div>
+                </a>
+                <p>I'm <span id="line">nobody</span></p>
+                <p>who are you?</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container-fluid">
+            <p>About me</p>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="col-lg-8 col-xs-12 intro">
+                        <p>I’m a new graduate student of Software Engineering with a master degree
+                            of Concordia University. Equipped with academic training, I have developed
+                            solid knowledge and 1 and half years experience in front-end development.
+                            I’m currently seeking for an opportunity to apply my experience and skills to practices.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 mengyao_img">
+                        <img src="imgs/1.jpg">
+                    </div>
+                    <div class="col-xs-12" id="skillset">
+                        <p>Skillset</p>
+                        <div class="col-xs-12" id="skill">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> HTML5
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> CSS3
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> Javascript
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> jQuery
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> Bootstrap
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> AngularJs
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i> MySQL
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-md-4"></div>
+                    <div class="divide col-xs-8 col-md-4"></div>
+                    <div class="col-xs-2 col-md-4"></div>
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-lg-10 col-lg-offset-1 col-xs-12 interest_job">
+
+                        <p>
+                            <span class="glyphicon glyphicon-search"></span>
+                            Interested job positions including but not limited to:
+                        </p>
+                        <ul>
+                            <li>- web developing</li>
+                            <li>- quality assurance</li>
+                            <li>- javascript programming</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 know_more">
+                        <p>Want to know more about me?</p>
+                        <i class="fa fa-hand-o-right faa-horizontal animated" style="margin-right: 6px"> </i>
+                        <a role="button" href="#" id="resume" data-toggle="modal" data-target="#request_modal" data-backdrop="static">
+                            <span>Request for Resume</span>
+                        </a>
+                        <div class="modal fade" id="request_modal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span class="glyphicon glyphicon-remove-sign"></span>
+                                        </button>
+                                        <p>Contact me</p>
+                                        <div class="divide"></div>
+
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-xs-8 col-xs-offset-1 col-lg-8 col-lg-offset-2 row">
+                                            <form id="request_form" novalidate>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <input type="text" class='name' placeholder="Name" required data-validation-required-message="Enter your name" aria-invalid="true">
+                                                        <span class="help-block"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <input type="email" class="email" placeholder="Email address" required data-validation-required-message="Enter you email address" aria-invalid="true">
+                                                        <span class="help-block"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <div class="controls">
+                                                        <textarea rows="5" class="msg" placeholder="Message" required data-validation-required-message="say something" aria-invalid="true"></textarea>
+                                                        <span class="help-block"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <input type="checkbox" id="request_label" aria-invalid="false">
+                                                    Request for resume
+                                                </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <div id="success_reply"></div>
+                                        <div class="form-actions">
+                                            <button type="submit" class="btn btn-primary btn-lg btnSend">
+                                                <span class="glyphicon glyphicon-send"></span>
+                                                Send
+                                            </button>
+                                            <button class="btn btn-primary btn-lg cancel" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="keep_learning">
+        <div class="back_img blur"></div>
+        <p>It's essential to keep moving, learning and evolving for
+            as long as you're here and this world keeps spinning</p>
+
+    </div>
+
+    <section id="project">
+        <div class="container-fluid">
+            <p>Academic Project</p>
+            <div class="divide col-xs-10 col-xs-offset-1"></div>
+            <div class="col-xs-12 col-md-6 projects">
+                <a href="#" class="project_item" data-toggle="modal" data-target="#project1">
+                    <div class="project_title">
+                        <p>Tower Defense Game</p>
+                    </div>
+                    <div class="cover">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#" class="project_item" data-toggle="modal" data-target="#project2">
+                    <div class="project_title">
+                        <p>Website of UINGlobal</p>
+                    </div>
+                    <div class="cover">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#" class="project_item" data-toggle="modal" data-target="#project3">
+                    <div class="project_title">
+                        <p>Online Student Management System</p>
+                    </div>
+                    <div class="cover">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#" class="project_item" data-toggle="modal" data-target="#project4">
+                    <div class="project_title">
+                        <p>Program Quality Testing</p>
+                    </div>
+                    <div class="cover">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="col-xs-12 title">
+                <p>Contact me</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+                <form class="message" novalidate>
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="text" class="msgName" placeholder="Name" required data-validation-required-message="enter your name" aria-invalid="false">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <input type="email" class="msgEmail" placeholder="Email address" required data-validation-required-message="enter your email address">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="controls">
+                            <textarea rows="5" class="msgMessage" placeholder="Message" required data-validation-required-message="say something"></textarea>
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                            <input type="checkbox" id="request_label2">Request for resume
+                    </div>
+
+
+                    <div class="contact_footer form-actions">
+                        <div class="msg_reply"></div>
+                        <button class="btn btn-primary btn-lg msg_send" type="submit">
+                            <span class="glyphicon glyphicon-send"></span>
+                            Send
+                        </button>
+
+                    </div>
+                </form>
+                <div class="col-xs-12" style="text-align: center; margin: 30px auto">
+                    <a href="https://ca.linkedin.com/in/wang-mengyao-30" style="color: #089bb0">
+                        <i class="fa fa-linkedin-square fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="divide col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2"></div>
+        <div id="copyright" class="col-xs-12">
+            <p>ALL RIGHTS RESERVED. MENGYAO WANG © 2016</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="project1" role="dialog">
+        <div class="modal-dialog project_modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <a href="https://github.com/zhaozheid/CCD_SOEN6441_TD" class="github-corner">
+                            <svg width="80" height="80" viewBox="0 0 250 250"
+                                 style="fill:#089bb0; color:#fff; position: absolute;
+                                 top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                            </svg>
+                            <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0deg)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </button>
+                    <p>Tower Defense Game</p>
+                    <div class="divide"></div>
+                </div>
+                <div class="modal-body">
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
+                    <p style="font-weight: bold">Group project</p>
+                    <p class="description">Built a “Tower Defense” computer game that allows user to play.
+                        Gamer can edit map, then build different abilities of towers to defense critters and
+                        prevent them arrive the endpoint. The components include map, game, tower, critter, and timer.
+                        There is a tower store created in the game, allow user buy and update towers.
+                        Furthermore it provides a significant wonderful user interface with all the
+                        functionalities supported. </p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Technologies:</span> Java, Eclipse, MVC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2" role="dialog">
+        <div class="modal-dialog project_modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <a href="https://github.com/alexwolfwang/UINGlobal" class="github-corner">
+                            <svg width="80" height="80" viewBox="0 0 250 250"
+                                 style="fill:#089bb0; color:#fff; position: absolute;
+                                 top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                            </svg>
+                            <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0deg)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </button>
+                    <p>Website of UINGlobal</p>
+                    <div class="divide"></div>
+                </div>
+                <div class="modal-body">
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
+                    <p style="font-weight: bold">Group project</p>
+                    <p class="description">Design and implement the front end side of a company web page based on the HTML file.
+                        <br>
+                        Applied HTML5, CSS3, Javascript, JQuery, Angular JS, Dom, Bootstrap.
+                        <br>
+                        Using Webstorm, SFTP as edit tools.
+                        <br>
+                        Design the responsive website for PC, laptop and mobile use.
+                    </p>
+                    <a href=" http://uinglobal.cn/" style="margin-left: 30px; text-decoration: none">
+                        <button class="uinglobal btn btn-primary">
+                            <span class="glyphicon glyphicon-plane"></span>
+                            UINGlobal
+                        </button>
+                    </a>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Technologies:</span> HTML,CSS,Javascript,jQuery,Bootstrap,MySQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3" role="dialog">
+        <div class="modal-dialog project_modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </button>
+                    <p>Online Student Management System</p>
+                    <div class="divide"></div>
+                </div>
+                <div class="modal-body">
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
+                    <p style="font-weight: bold">Group project</p>
+                    <p class="description">It's a student information system portal in which students can register,
+                        drop and discontinue courses as per the deadlines of each academic session and
+                        also pay the fees for each session. There are different roles Admin and Instructor
+                        where the Admin can add Courses, Instructors associating to a Department,
+                        schedule the courses every year, adding deadlines, managing account services.
+                        Instructor can View the students list, Add Grades to the Students. </p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Technologies:</span> HTML, CSS, Javascript, OOP, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4" role="dialog">
+        <div class="modal-dialog project_modal">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </button>
+                    <p>Program Quality Testing</p>
+                    <div class="divide"></div>
+                </div>
+                <div class="modal-body">
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
+                    <p style="font-weight: bold">Group project</p>
+                    <p class="description">Analyzed the corresponding for multiple speech processing tasks by
+                        implementing a speaker identification application, SpeakerIdentApp of MARF, to identify
+                        the speaker’s identities, gender and accent via machine learning for purpose of detecting
+                        the best candidates of the algorithm configurations.
+                        The Modular Audio Recognition Framework (MARF) is an open-source system written in Java
+                        to provide the testing framework to verify and validate algorithms of pattern recognition
+                        pipeline. MARF and GIPSY has been used to test comparing and analyzed same codes
+                        respectively. Then we feed backed the several different data, such as average cyclomatic
+                        complexity[v(G)], essential complexity[ev(G)] , module design complexity[iv(G)], etc.
+                        Then we exported the data by both textual and diagram forms. The three kinds of diagram
+                        results (Scatterplot, Histogram, and Kiviat) can state the difference between two test
+                        results obviously and directly. I was responsible for the data importing and result analysing.</p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Technologies:</span> Java, MARF, GIPSY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/mengyao_contact.js"></script>
+    <script src="js/mengyao_page.js"></script>
+
+</body>
+</html>
