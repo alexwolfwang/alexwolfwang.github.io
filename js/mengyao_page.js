@@ -4,7 +4,7 @@
 $(function() {
     $('#mengyao').click(function() {
         $(this).toggleClass('hover');
-    })
+    });
     //$('[data-toggle="tooltip"]').tooltip('show');
 
 
@@ -23,6 +23,7 @@ $(function() {
         event.preventDefault();
     });
 
+    $('body').scrollspy({target:'.navbar',offset:80})
 
 });
 
