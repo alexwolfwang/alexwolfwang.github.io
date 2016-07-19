@@ -59,13 +59,29 @@ nav {
     background-color: transparent !important;
 }
 .navbar-right a:hover:before,
-.navbar-right a:hover:after
+.navbar-right a:hover:after,
+.navbar-right a:active:before,
+.navbar-right a:active:after
 {
     opacity: 1;
     -webkit-transform: translate(0px);
     -moz-transform: translate(0px);
     transform: translate(0px);
 
+}
+
+.navbar .navbar-right .active a:before {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+}
+
+.navbar .navbar-right .active a:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
 }
 
 .navbar-toggle {
