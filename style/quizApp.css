@@ -1,0 +1,73 @@
+.well-img {
+    width: 100%;
+    height: 160px;
+}
+
+.well {
+    overflow: auto;
+    background-color: #e4e4e4;
+}
+.story {
+    height: 200px;
+    overflow: hidden ;
+}
+.answer {
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+.quiz .well, .result .well{
+    overflow: hidden;
+}
+
+.answer {
+    color: #46b8da;
+}
+.answer:hover {
+    cursor: pointer;
+}
+
+.sendQuestion {
+    margin-left: 10px;
+}
+.image-answer {
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.image-answer img {
+    width:100%;
+    height: auto;
+}
+
+.img-select {
+    border: 4px solid #6de4d3;
+    box-shadow: 3px 6px 2px #c2c2c2;
+}
+
+.image-answer.bg-success {
+    border: 4px solid #3bdd68;
+    box-shadow: 3px 6px 2px #c2c2c2;
+}
+
+.image-answer.bg-danger {
+    border: 4px solid #dd484b;
+    box-shadow: 3px 6px 2px #c2c2c2;
+}
+
+.result .answer .pull-right {
+    margin-top: 0;
+}
+.marginTop {
+    margin-top: 10px;
+
+}
+
+.goBack{
+    margin-top: 10px;
+}
