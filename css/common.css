@@ -577,6 +577,30 @@ form {
         top: 120px;
     }
 }
+
+
+
+/*portfolio*/
+
+#portfolio .row {
+    height:900px;
+    overflow: hidden;
+    margin-left: 0;
+    display: block;
+    /*display: inline-block;*/
+}
+
+#portfolio .slides {
+    width: 9600px;
+    height: 600px;
+}
+
+#portfolio .slides img {
+    width: 1920px;
+    float: left;
+    position: relative;
+}
+
 /*project*/
 
 #project .container-fluid{
