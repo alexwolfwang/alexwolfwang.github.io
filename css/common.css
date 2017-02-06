@@ -608,6 +608,7 @@ form {
 
 #project .container-fluid{
     padding-top: 50px;
+    padding-left:0;
     padding-bottom: 50px;
     height: 100%;
     background-color: #089bb0;
