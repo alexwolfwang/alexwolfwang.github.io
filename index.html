@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li class="page_scroll">
-                        <a href="#">
+                        <a href="#portfolio">
                             <span class="glyphicon glyphicon-picture"></span>
                             Portfolio
                         </a>
@@ -122,9 +122,6 @@
                                 </li>
                                 <li>
                                     <i class="fa fa-check-square-o"></i> MySQL
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> MongoDB
                                 </li>
                             </ul>
                         </div>
@@ -220,6 +217,41 @@
 
     </div>
 
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="slides">
+                    <div class="slide">
+                        <a href="http://uinglobal.cn/">
+                            <img src="imgs/uin.jpg">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://github.com/alexwolfwang/shopping-cart-git">
+                            <img src="imgs/shop.jpg">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://github.com/alexwolfwang/doraemonquiz">
+                            <img src="imgs/quiz.jpg">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://github.com/zhaozheid/CCD_SOEN6441_TD">
+                            <img src="imgs/td.png">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://github.com/zhaozheid/CCD_SOEN6441_TD">
+                            <img src="imgs/td.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="project">
         <div class="container-fluid">
             <p>Academic Project</p>
@@ -228,6 +260,16 @@
                 <a href="#" class="project_item" data-toggle="modal" data-target="#project2">
                     <div class="project_title">
                         <p>Website of UINGlobal</p>
+                    </div>
+                    <div class="cover">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="#" class="project_item" data-toggle="modal" data-target="#project6">
+                    <div class="project_title">
+                        <p>Online Shopping-cart</p>
                     </div>
                     <div class="cover">
                         <i class="fa fa-search-plus"></i>
@@ -264,7 +306,7 @@
                     </div>
                 </a>
             </div>
-            
+
             <div class="col-xs-12 col-md-6">
                 <a href="#" class="project_item" data-toggle="modal" data-target="#project4">
                     <div class="project_title">
@@ -394,8 +436,8 @@
                     <div class="divide"></div>
                 </div>
                 <div class="modal-body">
-                    
-                    <p style="font-family: 'Galada', serif; font-size: 26px">Company program</p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
+                    <p style="font-weight: bold">Group project</p>
                     <p class="description">Design and implement the front end side of a company web page based on the HTML file.
                         <br>
                         Applied HTML5, CSS3, Javascript, JQuery, Angular JS, Dom, Bootstrap.
@@ -404,7 +446,7 @@
                         <br>
                         Design the responsive website for PC, laptop and mobile use.
                     </p>
-                    <a href=" http://uinglobal.cn/" style="margin-left: 30px; text-decoration: none">
+                    <a href="http://uinglobal.cn/" style="margin-left: 30px; text-decoration: none">
                         <button class="uinglobal btn btn-primary">
                             <span class="glyphicon glyphicon-plane"></span>
                             UINGlobal
@@ -419,7 +461,7 @@
         <div class="modal-dialog project_modal">
             <div class="modal-content">
                 <div class="modal-header">
-					<div>
+                    <div>
                         <a href="https://github.com/alexwolfwang/doraemonquiz" class="github-corner">
                             <svg width="80" height="80" viewBox="0 0 250 250"
                                  style="fill:#089bb0; color:#fff; position: absolute;
@@ -437,13 +479,13 @@
                     <div class="divide"></div>
                 </div>
                 <div class="modal-body">
-                    
+
                     <p style="font-family: 'Galada', serif; font-size: 26px">Personal project</p>
                     <p class="description">It's a personal project that use AngularJS to create a Quiz
-                    web. It has several different pages controlled by ng-view. In the first page, it provides 
-                    the basic information about Doraemon, people can make multiple choices questions in second
-                    page, and get the result and score in the last page. The server part was supported by 
-                    MondoDB.</p>
+                        web. It has several different pages controlled by ng-view. In the first page, it provides
+                        the basic information about Doraemon, people can make multiple choices questions in second
+                        page, and get the result and score in the last page. The server part was supported by
+                        MondoDB.</p>
                     <a href="https://alexwolfwang.github.io/alexwolfwang-gitbub.io-doraemon-quiz/" style="margin-left: 30px; text-decoration: none">
                         <button class="doraemonQuiz btn btn-primary">
                             <span class="glyphicon glyphicon-plane"></span>
@@ -467,7 +509,7 @@
                     <div class="divide"></div>
                 </div>
                 <div class="modal-body">
-                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Software Measurement</p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
                     <p style="font-weight: bold">Group project</p>
                     <p class="description">Analyzed the corresponding for multiple speech processing tasks by
                         implementing a speaker identification application, SpeakerIdentApp of MARF, to identify
@@ -486,7 +528,7 @@
             </div>
         </div>
     </div>
-        <div class="modal fade" id="project5" role="dialog">
+    <div class="modal fade" id="project5" role="dialog">
         <div class="modal-dialog project_modal">
             <div class="modal-content">
                 <div class="modal-header">
@@ -498,7 +540,7 @@
                     <div class="divide"></div>
                 </div>
                 <div class="modal-body">
-                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Software Quality Assurance</p>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Course:</span> Advance Programming</p>
                     <p style="font-weight: bold">Group project</p>
                     <p class="description">It's a student information system portal in which students can register,
                         drop and discontinue courses as per the deadlines of each academic session and
@@ -511,9 +553,49 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="project6" role="dialog">
+        <div class="modal-dialog project_modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <a href="https://github.com/alexwolfwang/shopping-cart-git" class="github-corner">
+                            <svg width="80" height="80" viewBox="0 0 250 250"
+                                 style="fill:#089bb0; color:#fff; position: absolute;
+                                 top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                            </svg>
+                            <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0deg)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove-sign"></span>
+                    </button>
+                    <p>Online Shopping website</p>
+                    <div class="divide"></div>
+                </div>
+                <div class="modal-body">
+
+                    <p style="font-family: 'Galada', serif; font-size: 26px">Personal project</p>
+                    <p class="description">It's a personal project that use Express and MongoDB to create a Shopping
+                        website. It provides different kinds of function that just like signin signout, choose products,
+                        check cart, payment.
+                    </p>
+                    <a href="https://github.com/alexwolfwang/shopping-cart-git" style="margin-left: 30px; text-decoration: none">
+                        <button class="doraemonQuiz btn btn-primary">
+                            <span class="glyphicon glyphicon-plane"></span>
+                            Doraemon Quiz
+                        </button>
+                    </a>
+                    <p><span style="font-family: 'Galada', serif; font-size: 26px">Technologies:</span> JavaScript, Nodejs, Mongoose, StripeJS, PassportJS, Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/portfolio.js"></script>
     <script src="js/mengyao_contact.js"></script>
     <script src="js/mengyao_page.js"></script>
 
