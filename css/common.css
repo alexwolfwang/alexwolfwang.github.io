@@ -274,7 +274,10 @@ header .tooltip {
 #about {
     background-color: #e3e1d7;
 }
-
+.mengyao_img img {
+    width:240px;
+    height:320px;
+}
 #about .container-fluid {
     margin: 0;
     padding-top: 60px;
