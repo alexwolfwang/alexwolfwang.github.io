@@ -1,0 +1,18 @@
+#portfolio .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+  #portfolio .container-fluid .row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0;
+    display: block; }
+    #portfolio .container-fluid .row .slides {
+      width: 500%;
+      height: auto; }
+      #portfolio .container-fluid .row .slides img {
+        width: 20%;
+        float: left;
+        position: relative; }
+
+/*# sourceMappingURL=portfolio.css.map */

@@ -274,10 +274,7 @@ header .tooltip {
 #about {
     background-color: #e3e1d7;
 }
-.mengyao_img img {
-    width:220px;
-    height:320px;
-}
+
 #about .container-fluid {
     margin: 0;
     padding-top: 60px;
@@ -582,31 +579,41 @@ form {
 }
 
 
+.mengyao_img img{
+    width: 220px;
+    height: 320px;
+}
 
 /*portfolio*/
 
-#portfolio .row {
-    height:900px;
-    overflow: hidden;
-    margin-left: 0;
-    display: block;
-    /*display: inline-block;*/
-}
+/*#portfolio .row {*/
+    /*height:900px;*/
+    /*overflow: hidden;*/
+    /*margin-left: 0;*/
+    /*display: block;*/
+    /*!*display: inline-block;*!*/
+/*}*/
 
-#portfolio .slides {
-    width: 9600px;
-    height: 600px;
-}
+/*#portfolio .slides {*/
+    /*width: 9600px;*/
+    /*height: 600px;*/
+/*}*/
 
-#portfolio .slides img {
-    width: 1920px;
-    float: left;
-    position: relative;
-}
+/*#portfolio .slides img {*/
+    /*width: 100%;*/
+    /*float: left;*/
+    /*position: relative;*/
+/*}*/
 
-#portfolio .container-fluid{
-    padding-left: 0;
-}
+/*@media screen and (max-width: 900px){*/
+    /*#portfolio .slides {*/
+        /*width: 4500px;*/
+    /*}*/
+    /*#portfolio .slides img {*/
+        /*width: 900px;*/
+    /*}*/
+/*}*/
+
 /*project*/
 
 #project .container-fluid{
