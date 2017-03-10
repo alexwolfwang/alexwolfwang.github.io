@@ -2,11 +2,14 @@
  * Created by Alex.W on 2016/7/21.
  */
 $(function() {
-    var width = 1920;
+    var width = $(document).width();
     var animationSpeed = 500;
     var pause = 3000;
     var currentSlide = 1;
-
+    //$(window).on('resize',function() {
+    //    width = $(document).width();
+    //    console.log(width)
+    //});
 
     var $slide = $('.row');
     var $slideContainer = $slide.find('.slides');
