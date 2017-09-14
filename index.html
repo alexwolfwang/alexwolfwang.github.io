@@ -5,9 +5,11 @@
     <title>Mengyao's page</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Galada">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -34,25 +36,30 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page_scroll" style="display: none"></li>
-                    <li class="page_scroll">
+                    <li class="page_scroll"  data-menuanchor="Mengyao">
+                        <a href="#Mengyao">
+                            Mengyao
+                        </a>
+                    </li>
+                    <li class="page_scroll"  data-menuanchor="about">
                         <a href="#about">
                             <span class="glyphicon glyphicon-user"></span>
                             About
                         </a>
                     </li>
-                    <li class="page_scroll">
+                    <li class="page_scroll" data-menuanchor="portfolio">
                         <a href="#portfolio">
                             <span class="glyphicon glyphicon-picture"></span>
                             Portfolio
                         </a>
                     </li>
-                    <li class="page_scroll">
+                    <li class="page_scroll" data-menuanchor="project">
                         <a href="#project">
                             <span class="glyphicon glyphicon-folder-close"></span>
                             Project
                         </a>
                     </li>
-                    <li class="page_scroll">
+                    <li class="page_scroll" data-menuanchor="contact">
                         <a href="#contact">
                             <span class="glyphicon glyphicon-envelope"></span>
                             Contact
@@ -63,321 +70,305 @@
         </div>
     </nav>
 
-    <header>
-        <div class="container-fluid">
-            <div class="row col-xs-12 col-sm-12 col-lg-12">
-                <a href="#" id="mengyao">
-                    Mengyao
+    <div id="fullpage">
+        <header class="section section-one fp-section">
+            <div class="container-fluid">
+                <div class="row col-xs-12 col-sm-12 col-lg-12">
+                    <a href="#" class="mengyao">
+                        Mengyao
 
-                    <div class="tooltip">
-                        <div class="content">
-                            <p>梦遥       <span class="glyphicon glyphicon-bullhorn"></span> </p>
-                            <audio id="name_voice" src="audio/mengyao.mp3"></audio>
-                            <p>Mèng Yáo</p>
+                        <div class="tooltip">
+                            <div class="content">
+                                <p>梦遥       <span class="glyphicon glyphicon-bullhorn"></span> </p>
+                                <audio id="name_voice" src="audio/mengyao.mp3"></audio>
+                                <p>Mèng Yáo</p>
+                            </div>
+
                         </div>
-
-                    </div>
-                </a>
-                <p>I'm <span id="line">nobody</span></p>
-                <p>who are you?</p>
-            </div>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container-fluid">
-            <p>About me</p>
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                    <div class="col-lg-8 col-xs-12 intro">
-                        <p>I’m a new graduate student of Software Engineering with a master degree
-                            of Concordia University. Equipped with academic training, I have developed
-                            solid knowledge and 1 and half years experience in front-end development.
-                            I’m currently seeking for an opportunity to apply my experience and skills to practices.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 mengyao_img">
-                        <img src="imgs/myPic.jpg">
-                    </div>
-                    <div class="col-xs-12" id="skillset">
-                        <p>Skillset</p>
-                        <div class="col-xs-12" id="skill">
-                            <ul>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> HTML5
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> CSS3
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> Javascript
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> jQuery
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> Bootstrap
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> AngularJs
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-square-o"></i> MySQL
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-2 col-md-4"></div>
-                    <div class="divide col-xs-8 col-md-4"></div>
-                    <div class="col-xs-2 col-md-4"></div>
-
+                    </a>
+                    <p>I'm <span id="line">nobody</span></p>
+                    <p>who are you?</p>
                 </div>
-                <div class="col-xs-12">
-                    <div class="col-lg-10 col-lg-offset-1 col-xs-12 interest_job">
+            </div>
+        </header>
 
-                        <p>
-                            <span class="glyphicon glyphicon-search"></span>
-                            Interested job positions including but not limited to:
-                        </p>
-                        <ul>
-                            <li>- web developing</li>
-                            <li>- quality assurance</li>
-                            <li>- javascript programming</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 know_more">
-                        <p>Want to know more about me?</p>
-                        <i class="fa fa-hand-o-right faa-horizontal animated" style="margin-right: 6px"> </i>
-                        <a role="button" href="#" id="resume" data-toggle="modal" data-target="#request_modal" data-backdrop="static">
-                            <span>Request for Resume</span>
-                        </a>
-                        <div class="modal fade" id="request_modal" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span class="glyphicon glyphicon-remove-sign"></span>
-                                        </button>
-                                        <p>Contact me</p>
-                                        <div class="divide"></div>
-
-
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="col-xs-8 col-xs-offset-1 col-lg-8 col-lg-offset-2 row">
-                                            <form id="request_form" novalidate>
-                                                <div class="control-group">
-                                                    <div class="controls">
-                                                        <input type="text" class='name' placeholder="Name" required data-validation-required-message="Enter your name" aria-invalid="true">
-                                                        <span class="help-block"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="control-group">
-                                                    <div class="controls">
-                                                        <input type="email" class="email" placeholder="Email address" required data-validation-required-message="Enter you email address" aria-invalid="true">
-                                                        <span class="help-block"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="control-group">
-                                                    <div class="controls">
-                                                        <textarea rows="5" class="msg" placeholder="Message" required data-validation-required-message="say something" aria-invalid="true"></textarea>
-                                                        <span class="help-block"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="control-group">
-                                                    <input type="checkbox" id="request_label" aria-invalid="false">
-                                                    Request for resume
-                                                </div>
-                                                </form>
-                                        </div>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <div id="success_reply"></div>
-                                        <div class="form-actions">
-                                            <button type="submit" class="btn btn-primary btn-lg btnSend">
-                                                <span class="glyphicon glyphicon-send"></span>
-                                                Send
-                                            </button>
-                                            <button class="btn btn-primary btn-lg cancel" data-dismiss="modal">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
+        <section class="about section section-two fp-section">
+            <div class="container-fluid">
+                <p>About me</p>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div class="col-md-8 col-xs-12 intro">
+                            <p>I’m a new graduate student of Software Engineering with a master degree
+                                of Concordia University. Equipped with academic training, I have developed
+                                solid knowledge and 1 and half years experience in front-end development.
+                                I’m currently seeking for an opportunity to apply my experience and skills to practices.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-xs-12 mengyao_img">
+                            <img src="imgs/myPic.jpg">
+                        </div>
+                        <div class="col-xs-12" id="skillset">
+                            <p>Skillset</p>
+                            <div class="col-xs-12" id="skill">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> HTML5
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> CSS3
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> Angular 4
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> Javascript
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> jQuery
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> Bootstrap
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-square-o"></i> MySQL
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="col-xs-2 col-md-4"></div>
+                        <div class="divide col-xs-8 col-md-4"></div>
+                        <div class="col-xs-2 col-md-4"></div>
+
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-lg-10 col-lg-offset-1 col-xs-12 interest_job">
+
+                            <p>
+                                <span class="glyphicon glyphicon-search"></span>
+                                Interested job positions including but not limited to:
+                            </p>
+                            <ul>
+                                <li>- Front-End developer</li>
+                                <li>- Web developer</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 know_more">
+                            <p>Want to know more about me?</p>
+                            <i class="fa fa-hand-o-right faa-horizontal animated" style="margin-right: 6px"> </i>
+                            <a role="button" href="#contact" id="resume">
+                                <span>Request for Resume</span>
+                            </a>
+                            <!--<div class="modal fade" id="request_modal" role="dialog">-->
+                                <!--<div class="modal-dialog">-->
+                                    <!--<div class="modal-content">-->
+                                        <!--<div class="modal-header">-->
+                                            <!--<button type="button" class="close" data-dismiss="modal">-->
+                                                <!--<span class="glyphicon glyphicon-remove-sign"></span>-->
+                                            <!--</button>-->
+                                            <!--<p>Contact me</p>-->
+                                            <!--<div class="divide"></div>-->
+
+
+                                        <!--</div>-->
+                                        <!--<div class="modal-body">-->
+                                            <!--<div class="col-xs-8 col-xs-offset-1 col-lg-8 col-lg-offset-2 row">-->
+                                                <!--<form id="request_form" novalidate>-->
+                                                    <!--<div class="control-group">-->
+                                                        <!--<div class="controls">-->
+                                                            <!--<input type="text" class='name' placeholder="Name" required data-validation-required-message="Enter your name" aria-invalid="true">-->
+                                                            <!--<span class="help-block"></span>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="control-group">-->
+                                                        <!--<div class="controls">-->
+                                                            <!--<input type="email" class="email" placeholder="Email address" required data-validation-required-message="Enter you email address" aria-invalid="true">-->
+                                                            <!--<span class="help-block"></span>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="control-group">-->
+                                                        <!--<div class="controls">-->
+                                                            <!--<textarea rows="5" class="msg" placeholder="Message" required data-validation-required-message="say something" aria-invalid="true"></textarea>-->
+                                                            <!--<span class="help-block"></span>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="control-group">-->
+                                                        <!--<input type="checkbox" id="request_label" aria-invalid="false">-->
+                                                        <!--Request for resume-->
+                                                    <!--</div>-->
+                                                <!--</form>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+                                        <!--<div class="modal-footer">-->
+                                            <!--<div id="success_reply"></div>-->
+                                            <!--<div class="form-actions">-->
+                                                <!--<button type="submit" class="btn btn-primary btn-lg btnSend">-->
+                                                    <!--<span class="glyphicon glyphicon-send"></span>-->
+                                                    <!--Send-->
+                                                <!--</button>-->
+                                                <!--<button class="btn btn-primary btn-lg cancel" data-dismiss="modal">Cancel</button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="keep_learning">
-        <div class="back_img blur"></div>
-        <p>It's essential to keep moving, learning and evolving for
-            as long as you're here and this world keeps spinning</p>
+        </section>
+        <!--<div class="keep_learning section section-three fp-section">-->
+            <!--<div class="back_img blur"></div>-->
+            <!--<p>It's essential to keep moving, learning and evolving for-->
+                <!--as long as you're here and this world keeps spinning</p>-->
 
-    </div>
+        <!--</div>-->
 
-    <section id="portfolio">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="slides">
-                    <div class="slide">
-                        <a href="http://uinglobal.cn/">
-                            <img src="imgs/uin.jpg">
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://github.com/alexwolfwang/shopping-cart-git">
-                            <img src="imgs/shop.jpg">
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://alexwolfwang.github.io/alexwolfwang-gitbub.io-doraemon-quiz/">
-                            <img src="imgs/quiz.jpg">
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://github.com/zhaozheid/CCD_SOEN6441_TD">
-                            <img src="imgs/td.png">
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="http://uinglobal.cn/">
-                            <img src="imgs/uin.jpg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="portfolio section section section-three fp-section">
 
-
-    <section id="project">
-        <div class="container-fluid">
-            <p>Academic Project</p>
-            <div class="divide col-xs-10 col-xs-offset-1"></div>
-            <div class="col-xs-12 col-md-6">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project2">
-                    <div class="project_title">
-                        <p>Website of UINGlobal</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
+            <div class="slide">
+                <a href="http://uinglobal.cn/" class="img1">
+                <!--<img src="imgs/uin.jpg">-->
                 </a>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project6">
-                    <div class="project_title">
-                        <p>Online Shopping-cart</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
+            <div class="slide">
+                <a href="https://github.com/alexwolfwang/shopping-cart-git" class="img2">
+                <!--<img src="imgs/shop.jpg">-->
                 </a>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project3">
-                    <div class="project_title">
-                        <p>Online Quiz Website</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
+            <div class="slide">
+                <a href="https://alexwolfwang.github.io/alexwolfwang-gitbub.io-doraemon-quiz/" class="img3">
+                    <!--<img src="imgs/quiz.jpg">-->
                 </a>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project5">
-                    <div class="project_title">
-                        <p>Online Student Management System</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
+            <div class="slide">
+                <a href="https://github.com/zhaozheid/CCD_SOEN6441_TD" class="img4">
+                <!--<img src="imgs/td.png">-->
                 </a>
             </div>
-            <div class="col-xs-12 col-md-6 projects">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project1">
-                    <div class="project_title">
-                        <p>Tower Defense Game</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
-                </a>
-            </div>
+        </section>
 
-            <div class="col-xs-12 col-md-6">
-                <a href="#" class="project_item" data-toggle="modal" data-target="#project4">
-                    <div class="project_title">
-                        <p>Program Quality Testing</p>
-                    </div>
-                    <div class="cover">
-                        <i class="fa fa-search-plus"></i>
-                    </div>
-                </a>
-            </div>
 
-        </div>
-
-    </section>
-    <section id="contact">
-        <div class="container-fluid">
-            <div class="col-xs-12 title">
-                <p>Contact me</p>
-            </div>
-            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-                <form class="message" novalidate>
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="text" class="msgName" placeholder="Name" required data-validation-required-message="enter your name" aria-invalid="false">
-                            <span class="help-block"></span>
+        <section class="project section section-four fp-section">
+            <div class="container-fluid">
+                <p>Academic Project</p>
+                <div class="divide col-xs-10 col-xs-offset-1"></div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project2">
+                        <div class="project_title">
+                            <p>Website of UINGlobal</p>
                         </div>
-                    </div>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <input type="email" class="msgEmail" placeholder="Email address" required data-validation-required-message="enter your email address">
-                            <span class="help-block"></span>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
                         </div>
-                    </div>
-
-                    <div class="control-group">
-                        <div class="controls">
-                            <textarea rows="5" class="msgMessage" placeholder="Message" required data-validation-required-message="say something"></textarea>
-                            <span class="help-block"></span>
-                        </div>
-                    </div>
-
-                    <div class="control-group">
-                            <input type="checkbox" id="request_label2">Request for resume
-                    </div>
-
-
-                    <div class="contact_footer form-actions">
-                        <div class="msg_reply"></div>
-                        <button class="btn btn-primary btn-lg msg_send" type="submit">
-                            <span class="glyphicon glyphicon-send"></span>
-                            Send
-                        </button>
-
-                    </div>
-                </form>
-                <div class="col-xs-12" style="text-align: center; margin: 30px auto">
-                    <a href="https://ca.linkedin.com/in/wang-mengyao-30" style="color: #089bb0">
-                        <i class="fa fa-linkedin-square fa-4x"></i>
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project6">
+                        <div class="project_title">
+                            <p>Online Shopping-cart</p>
+                        </div>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project3">
+                        <div class="project_title">
+                            <p>Online Quiz Website</p>
+                        </div>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project5">
+                        <div class="project_title">
+                            <p>Online Student Management System</p>
+                        </div>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-6 projects">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project1">
+                        <div class="project_title">
+                            <p>Tower Defense Game</p>
+                        </div>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
 
-    <footer>
-        <div class="divide col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2"></div>
-        <div id="copyright" class="col-xs-12">
-            <p>ALL RIGHTS RESERVED. MENGYAO WANG © 2016</p>
-        </div>
-    </footer>
+                <div class="col-xs-12 col-md-6">
+                    <a href="#" class="project_item" data-toggle="modal" data-target="#project4">
+                        <div class="project_title">
+                            <p>Program Quality Testing</p>
+                        </div>
+                        <div class="cover">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact section section-five fp-sections">
+            <div class="contactInput col-xs-12">
+                <h4>Contact me</h4>
+                <div class="container">
+                    <form novalidate>
+                        <div class="form-control">
+                            <input type="text" class="name" required />
+                            <span class="bar"></span>
+                            <label for="name">Name</label>
+                            <div class="error-label hide">Please enter your name</div>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" class="email" required />
+                            <span class="bar"></span>
+                            <label for="email">Please enter your email</label>
+                            <div class="error-label hide">Please enter correct email</div>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" class="phone" required />
+                            <span class="bar"></span>
+                            <label for="phone">Please enter your phone number</label>
+                            <div class="error-label hide">Please enter correct phone number</div>
+
+                        </div>
+                        <div class="form-control">
+                            <textarea name="message" class="consult" rows="4" cols="30" required></textarea>
+                            <span class="bar"></span>
+                            <label for="message">Please enter message</label>
+                            <div class="error-label hide">Please enter message</div>
+                        </div>
+                        <div class="form-control requestCV">
+                            <input type="checkbox" id="request_label2" aria-invalid="false">
+                            Request for resume
+                        </div>
+                        <div class="btnContainer">
+                            <button type="button" class="subBtn submit2"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="divide col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2"></div>
+                <div id="copyright" class="col-xs-12">
+                    <p>ALL RIGHTS RESERVED. MENGYAO WANG © 2016</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+
+
 
     <div class="modal fade" id="project1" role="dialog">
         <div class="modal-dialog project_modal">
@@ -594,6 +585,7 @@
     </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/mengyao_contact.js"></script>
