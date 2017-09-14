@@ -1,0 +1,205 @@
+.slideImg, #fullpage .section-three .img1, #fullpage .section-three .img2, #fullpage .section-three .img3, #fullpage .section-three .img4 {
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.btnContainer {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 138px;
+  height: 40px;
+  text-align: center; }
+  .btnContainer:focus {
+    border: none;
+    outline: none; }
+
+.submit1, .submit2 {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 158px;
+  border-radius: 40px;
+  background: #fff;
+  border: 1px solid #089bb0;
+  color: #089bb0;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease; }
+  .submit1:hover, .submit2:hover {
+    color: white;
+    background: #089bb0; }
+  .submit1:active, .submit2:active {
+    letter-spacing: 2px; }
+  .submit1:after, .submit2:after {
+    content: "Submit"; }
+
+.onclic {
+  width: 40px !important;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #089bb0;
+  animation: rotating 2s 0.25s linear infinite; }
+  .onclic:after {
+    content: ""; }
+  .onclic:hover {
+    color: #089bb0;
+    background: white; }
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #089bb0; }
+  .validate:after {
+    font-family: 'FontAwesome';
+    content: "\f00c"; }
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+#fullpage {
+  height: 100%;
+  position: relative; }
+  #fullpage .section {
+    height: 100%; }
+  #fullpage .section-one {
+    background-color: #29c9c5; }
+  #fullpage .section-three .fp-controlArrow.fp-prev {
+    border-color: transparent #e3e1d7 transparent transparent; }
+    #fullpage .section-three .fp-controlArrow.fp-prev:hover {
+      border-color: transparent #fbf9f7 transparent transparent; }
+  #fullpage .section-three .fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #e3e1d7; }
+    #fullpage .section-three .fp-controlArrow.fp-next:hover {
+      border-color: transparent transparent transparent #fbf9f7; }
+  #fullpage .section-three .img1 {
+    background-image: url(../imgs/pay.png); }
+  #fullpage .section-three .img2 {
+    background-image: url(../imgs/shop.jpg); }
+  #fullpage .section-three .img3 {
+    background-image: url(../imgs/quiz.jpg); }
+  #fullpage .section-three .img4 {
+    background-image: url(../imgs/td.png); }
+  #fullpage .section-five {
+    padding: 54px 180px 62px; }
+    #fullpage .section-five .title {
+      width: 100%; }
+      #fullpage .section-five .title h1 {
+        font-size: 50px;
+        color: #4A4A4A;
+        letter-spacing: 0.4px;
+        text-shadow: none; }
+      #fullpage .section-five .title h3 {
+        margin-top: 24px;
+        margin-bottom: 48px;
+        font-size: 28px;
+        color: #000000;
+        letter-spacing: 0.4px;
+        line-height: 1;
+        text-shadow: none; }
+    #fullpage .section-five .contactInput {
+      padding: 55px 30px 100px 30px;
+      border-radius: 5px;
+      background-color: white;
+      -webkit-transition: padding 1s;
+      transition: padding 1s;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease; }
+      #fullpage .section-five .contactInput:hover {
+        padding: 60px 35px 110px;
+        box-shadow: 0 1px 20px 0px rgba(176, 176, 176, 0.32); }
+      #fullpage .section-five .contactInput h4 {
+        font-size: 28px;
+        color: #4A4A4A;
+        font-weight: 600;
+        line-height: 30px;
+        padding-left: 20px;
+        margin-top: 0;
+        margin-bottom: 0; }
+      #fullpage .section-five .contactInput .container {
+        width: 100%;
+        padding: 4px 20px 30px;
+        padding-right: 0; }
+        #fullpage .section-five .contactInput .container .form-control {
+          position: relative;
+          margin-top: 50px;
+          width: 100%;
+          padding: 0;
+          border-radius: 0;
+          border: none; }
+          #fullpage .section-five .contactInput .container .form-control:first-child {
+            margin-top: 34px; }
+          #fullpage .section-five .contactInput .container .form-control .error-label {
+            color: #D0011B;
+            text-align: left; }
+        #fullpage .section-five .contactInput .container .requestCV {
+          margin-top: 100px; }
+          #fullpage .section-five .contactInput .container .requestCV #request_label2 {
+            margin-top: 0;
+            display: inline-block;
+            width: 30px; }
+      #fullpage .section-five .contactInput input, #fullpage .section-five .contactInput textarea {
+        border: none;
+        border-bottom: 1px solid #DEDEDE;
+        padding: 10px 0;
+        width: 100%;
+        display: block;
+        font-size: 16px;
+        outline: none;
+        resize: none; }
+      #fullpage .section-five .contactInput input:focus {
+        border: none;
+        outline: none; }
+      #fullpage .section-five .contactInput input:focus ~ label, #fullpage .section-five .contactInput .form-control input:valid ~ label, #fullpage .section-five .contactInput textarea:focus ~ label, #fullpage .section-five .contactInput .form-control textarea:valid ~ label {
+        top: -16px;
+        font-size: 14px;
+        line-height: 20px;
+        left: 2px;
+        color: #4990E2;
+        white-space: nowrap;
+        overflow: hidden; }
+      #fullpage .section-five .contactInput label {
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        font-size: 16px;
+        color: #BDBDBD;
+        transistion: 0.6s ease all;
+        -webkit-transition: 0.6s ease all;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        pointer-events: none; }
+      #fullpage .section-five .contactInput .bar {
+        position: relative;
+        width: 100%;
+        display: block; }
+      #fullpage .section-five .contactInput .bar:before, #fullpage .section-five .contactInput .bar:after {
+        content: '';
+        height: 1px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        transition: 0.8s ease all;
+        -moz-transition: 0.8s ease all;
+        -webkit-transition: 0.8s ease all; }
+      #fullpage .section-five .contactInput .bar:before {
+        left: 50%; }
+      #fullpage .section-five .contactInput .bar:after {
+        right: 50%; }
+      #fullpage .section-five .contactInput input:focus ~ .bar:before, #fullpage .section-five .contactInput input:focus ~ .bar:after, #fullpage .section-five .contactInput textarea:focus ~ .bar:before, #fullpage .section-five .contactInput textarea:focus ~ .bar:after {
+        width: 50%; }
+      #fullpage .section-five .contactInput input:valid ~ .bar:before, #fullpage .section-five .contactInput input:valid ~ .bar:after, #fullpage .section-five .contactInput textarea:valid ~ .bar:before, #fullpage .section-five .contactInput textarea:valid ~ .bar:after {
+        background: #2ecc71; }
+      #fullpage .section-five .contactInput input:invalid ~ .bar:before, #fullpage .section-five .contactInput input:invalid ~ .bar:after, #fullpage .section-five .contactInput textarea:invalid ~ .bar:before, #fullpage .section-five .contactInput textarea:invalid ~ .bar:after {
+        background: #2196f3; }
+
+/*# sourceMappingURL=index.css.map */
